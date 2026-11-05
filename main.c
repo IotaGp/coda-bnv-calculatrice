@@ -2,5 +2,13 @@
 #include <stdio.h>
 int main()
 {
-exit(0);
+	char ope[10];
+	int nombre1;
+	int nombre2;
+	printf("Choisissez un opérateur : ");
+	scanf("%c", ope);
+	printf("Choisissez deux nombres : ");
+	scanf("%d", nombre1);
+	scanf("%d", nombre2);
+	exit(0);
 }
