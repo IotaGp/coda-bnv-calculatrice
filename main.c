@@ -5,7 +5,7 @@ int main()
 	char ope[10];
 	int nombre1;
 	int nombre2;
-	printf("Choisissez un opérateur : ");
+	printf("Bonjour, choisissez un opérateur entre + - / * et % : ");
 	scanf("%c", ope);
 	printf("Choisissez deux nombres : ");
 	scanf("%d", nombre1);
