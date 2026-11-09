@@ -1,6 +1,4 @@
-#include <stdlib.h>
 #include<stdio.h>
-#include "operations.h"
 int addition(int n1, int n2)
     {
     printf("addition\n");
@@ -31,8 +29,8 @@ int addition(int n1, int n2)
 	}
     else
 	{
-		int resultat = n1 / n2;
-        printf("Le résultat est %d\n", resultat);
+		double resultat = n1 / n2;
+        printf("Le résultat est %.2f\n", resultat);
 	}
     return 0;
     }
