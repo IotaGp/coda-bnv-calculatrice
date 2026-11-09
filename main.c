@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "operations.h"
 int main()
 {
 	char ope;
@@ -12,47 +13,23 @@ int main()
 	scanf("%d", &nombre2);
 	if(ope == '+')
 	{
-		printf("addition\n");
-		int resultat = nombre1 + nombre2;
-		printf("Le résultat est %d\n", resultat);
+		addition(nombre1, nombre2);
 	}
 	else if(ope == '-')
 	{
-		printf("soustraction\n");
-		int resultat = nombre1 - nombre2;
-		printf("Le résultat est %d\n", resultat);
+		soustraction(nombre1, nombre2);
 	}
 	else if(ope == '*')
 	{
-		printf("multiplication\n");
-		int resultat = nombre1 * nombre2;
-                printf("Le résultat %d\n", resultat);
+		multiplication(nombre1, nombre2);
 	}
 	else if(ope == '/')
 	{
-		printf("division\n");
-		if(nombre1 == 0 || nombre2 == 0)
-		{
-			printf("Opération impossible.\n");
-		}
-		else
-		{
-			int resultat = nombre1 / nombre2;
-                	printf("Le résultat est %d\n", resultat);
-		}
+		division(nombre1, nombre2);
 	}
 	else if(ope == '%')
 	{
-		printf("modulo\n");
-		if(nombre1 == 0 || nombre2 == 0)
-		{
-			printf("Opération impossible.\n");
-		}
-		else
-		{
-			int resultat = nombre1 % nombre2;
-                	printf("Le résultat %d\n", resultat);
-		}
+		modulo(nombre1, nombre2);
 	}
 	else
 	{
